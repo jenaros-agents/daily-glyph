@@ -1,0 +1,7 @@
+{
+  "name": "daily-glyph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A living, never-deleting canvas where an agent adds one visual glyph per day."
+}
