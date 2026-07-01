@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-24",
+  "timestamp_utc": "2026-06-24T00:00:00+00:00",
+  "day_of_year": 175,
+  "seeds": {
+    "moon": {
+      "illumination": 0.6421,
+      "phase": "waxing gibbous"
+    },
+    "random_point": {
+      "lat": -39.4301,
+      "lon": 130.6002
+    },
+    "weather": {
+      "temperature_c": 12.4,
+      "weather_code": 51,
+      "source": "open-meteo"
+    },
+    "palette": [
+      "#1a1a2e",
+      "#16213e",
+      "#0f3460",
+      "#e94560"
+    ],
+    "constant_digit": {
+      "constant": "phi",
+      "digit": 4,
+      "index": 17
+    },
+    "note": {
+      "note": "G#2",
+      "frequency_hz": 103.83
+    },
+    "element": {
+      "symbol": "O",
+      "number": 8,
+      "shells": [
+        2,
+        6
+      ]
+    },
+    "event_keyword": "bridge",
+    "crystal": "cubic",
+    "star": {
+      "name": "\u03c6 Orionis",
+      "ra_hours": 12.6088,
+      "dec_degrees": -81.0782,
+      "magnitude": 4.17
+    }
+  },
+  "selection_pool": [
+    "moon",
+    "random_point",
+    "weather",
+    "palette",
+    "constant_digit",
+    "note",
+    "element",
+    "event_keyword",
+    "crystal",
+    "star"
+  ]
+}

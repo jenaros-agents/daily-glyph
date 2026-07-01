@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-26",
+  "seeds_used": [
+    "moon",
+    "palette",
+    "constant_digit",
+    "note",
+    "element",
+    "event_keyword"
+  ],
+  "description": "Iron electron shells rendered as concentric rings with a current line passing through.",
+  "library": null
+}

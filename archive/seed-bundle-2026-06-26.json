@@ -1,0 +1,65 @@
+{
+  "date": "2026-06-26",
+  "timestamp_utc": "2026-06-26T00:00:00+00:00",
+  "day_of_year": 177,
+  "seeds": {
+    "moon": {
+      "illumination": 0.8273,
+      "phase": "waxing gibbous"
+    },
+    "random_point": {
+      "lat": 88.5645,
+      "lon": -3.3975
+    },
+    "weather": {
+      "temperature_c": -0.1,
+      "weather_code": 73,
+      "source": "open-meteo"
+    },
+    "palette": [
+      "#606c38",
+      "#283618",
+      "#fefae0",
+      "#dda15e"
+    ],
+    "constant_digit": {
+      "constant": "e",
+      "digit": 5,
+      "index": 15
+    },
+    "note": {
+      "note": "E3",
+      "frequency_hz": 164.81
+    },
+    "element": {
+      "symbol": "Fe",
+      "number": 26,
+      "shells": [
+        2,
+        8,
+        14,
+        2
+      ]
+    },
+    "event_keyword": "current",
+    "crystal": "monoclinic",
+    "star": {
+      "name": "\u03b5 Aquarii",
+      "ra_hours": 9.0352,
+      "dec_degrees": 86.4524,
+      "magnitude": 3.23
+    }
+  },
+  "selection_pool": [
+    "moon",
+    "random_point",
+    "weather",
+    "palette",
+    "constant_digit",
+    "note",
+    "element",
+    "event_keyword",
+    "crystal",
+    "star"
+  ]
+}

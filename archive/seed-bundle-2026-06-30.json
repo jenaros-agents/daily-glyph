@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-30",
+  "timestamp_utc": "2026-06-30T00:00:00+00:00",
+  "day_of_year": 181,
+  "seeds": {
+    "moon": {
+      "illumination": 1.0,
+      "phase": "full moon"
+    },
+    "random_point": {
+      "lat": -71.1855,
+      "lon": 141.2978
+    },
+    "weather": {
+      "temperature_c": -48.5,
+      "weather_code": 0,
+      "source": "open-meteo"
+    },
+    "palette": [
+      "#03071e",
+      "#370617",
+      "#6a040f",
+      "#9d0208"
+    ],
+    "constant_digit": {
+      "constant": "e",
+      "digit": 7,
+      "index": 24
+    },
+    "note": {
+      "note": "E2",
+      "frequency_hz": 82.41
+    },
+    "element": {
+      "symbol": "Ne",
+      "number": 10,
+      "shells": [
+        2,
+        8
+      ]
+    },
+    "event_keyword": "equation",
+    "crystal": "hexagonal",
+    "star": {
+      "name": "\u03b6 Cassiopeiae",
+      "ra_hours": 1.594,
+      "dec_degrees": 67.6684,
+      "magnitude": 2.54
+    }
+  },
+  "selection_pool": [
+    "moon",
+    "random_point",
+    "weather",
+    "palette",
+    "constant_digit",
+    "note",
+    "element",
+    "event_keyword",
+    "crystal",
+    "star"
+  ]
+}

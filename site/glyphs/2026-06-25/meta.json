@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-25",
+  "seeds_used": [
+    "moon",
+    "palette",
+    "event_keyword",
+    "constant_digit",
+    "note",
+    "star"
+  ],
+  "description": "Silent horizontal lines with a slow pulsing orb and a single star.",
+  "library": null
+}

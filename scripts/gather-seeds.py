@@ -5,6 +5,7 @@ Writes a JSON bundle to archive/seed-bundle-YYYY-MM-DD.json.
 """
 import json
 import math
+import os
 import random
 from datetime import datetime, timezone
 from pathlib import Path
@@ -136,7 +137,11 @@ def random_star():
     }
 
 def build_bundle() -> dict:
-    now = datetime.now(timezone.utc)
+    backfill = os.environ.get("BACKFILL_DATE")
+    if backfill:
+        now = datetime.strptime(backfill, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    else:
+        now = datetime.now(timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
     point = random_point()
     illum = moon_illumination(now)

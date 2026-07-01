@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-29",
+  "timestamp_utc": "2026-06-29T00:00:00+00:00",
+  "day_of_year": 180,
+  "seeds": {
+    "moon": {
+      "illumination": 0.9881,
+      "phase": "full moon"
+    },
+    "random_point": {
+      "lat": 36.8291,
+      "lon": 151.8355
+    },
+    "weather": {
+      "temperature_c": 22.5,
+      "weather_code": 2,
+      "source": "open-meteo"
+    },
+    "palette": [
+      "#03071e",
+      "#370617",
+      "#6a040f",
+      "#9d0208"
+    ],
+    "constant_digit": {
+      "constant": "e",
+      "digit": 8,
+      "index": 5
+    },
+    "note": {
+      "note": "G#3",
+      "frequency_hz": 207.65
+    },
+    "element": {
+      "symbol": "Ne",
+      "number": 10,
+      "shells": [
+        2,
+        8
+      ]
+    },
+    "event_keyword": "harvest",
+    "crystal": "triclinic",
+    "star": {
+      "name": "\u03c3 Cygni",
+      "ra_hours": 14.0524,
+      "dec_degrees": 37.7525,
+      "magnitude": 5.4
+    }
+  },
+  "selection_pool": [
+    "moon",
+    "random_point",
+    "weather",
+    "palette",
+    "constant_digit",
+    "note",
+    "element",
+    "event_keyword",
+    "crystal",
+    "star"
+  ]
+}

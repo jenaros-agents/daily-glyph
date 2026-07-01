@@ -10,6 +10,7 @@ Renames glyph.js to its content hash, updates the HTML, and writes meta.json.
 """
 import hashlib
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -32,7 +33,11 @@ def sha256_file(path: Path) -> str:
 
 
 def main():
-    now = datetime.now(timezone.utc)
+    backfill = os.environ.get("BACKFILL_DATE")
+    if backfill:
+        now = datetime.strptime(backfill, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    else:
+        now = datetime.now(timezone.utc)
     date_str = now.strftime("%Y-%m-%d")
     day_dir = GLYPHS / date_str
 

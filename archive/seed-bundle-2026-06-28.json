@@ -1,0 +1,63 @@
+{
+  "date": "2026-06-28",
+  "timestamp_utc": "2026-06-28T00:00:00+00:00",
+  "day_of_year": 179,
+  "seeds": {
+    "moon": {
+      "illumination": 0.9542,
+      "phase": "full moon"
+    },
+    "random_point": {
+      "lat": -46.7967,
+      "lon": -13.626
+    },
+    "weather": {
+      "temperature_c": 6.6,
+      "weather_code": 0,
+      "source": "open-meteo"
+    },
+    "palette": [
+      "#264653",
+      "#2a9d8f",
+      "#e9c46a",
+      "#f4a261"
+    ],
+    "constant_digit": {
+      "constant": "phi",
+      "digit": 8,
+      "index": 9
+    },
+    "note": {
+      "note": "D#3",
+      "frequency_hz": 155.56
+    },
+    "element": {
+      "symbol": "C",
+      "number": 6,
+      "shells": [
+        2,
+        4
+      ]
+    },
+    "event_keyword": "ember",
+    "crystal": "orthorhombic",
+    "star": {
+      "name": "\u03c9 Aquarii",
+      "ra_hours": 1.2055,
+      "dec_degrees": -81.4353,
+      "magnitude": 3.02
+    }
+  },
+  "selection_pool": [
+    "moon",
+    "random_point",
+    "weather",
+    "palette",
+    "constant_digit",
+    "note",
+    "element",
+    "event_keyword",
+    "crystal",
+    "star"
+  ]
+}
