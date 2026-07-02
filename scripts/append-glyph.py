@@ -66,19 +66,19 @@ def main():
     with open(meta_file, "w") as f:
         json.dump(meta, f, indent=2)
 
-    # Hash and rename glyph.js.
+    # Hash and copy glyph.js to immutable name.
     h = sha256_file(glyph_file)
     hashed_file = day_dir / f"{h}.js"
-    if hashed_file.exists() and hashed_file.name != glyph_file.name:
-        glyph_file.unlink()
-    elif hashed_file.name != glyph_file.name:
-        glyph_file.rename(hashed_file)
+    if not hashed_file.exists():
+        import shutil
+        shutil.copy2(glyph_file, hashed_file)
 
     # Ensure the CSS file exists as either <hash>.css or none at all.
     css_file = day_dir / "glyph.css"
     hashed_css = day_dir / f"{h}.css"
-    if css_file.exists():
-        css_file.rename(hashed_css)
+    if css_file.exists() and not hashed_css.exists():
+        import shutil
+        shutil.copy2(css_file, hashed_css)
 
     # Build the HTML injection.
     rel_path = f"/glyphs/{date_str}/{hashed_file.name}"
@@ -103,11 +103,12 @@ def main():
     insert_lines = [script_tag]
     if hashed_css.exists():
         insert_lines.insert(0, css_tag)
-    insertion = "\n".join(insert_lines) + "\n"
+    insertion = "\n" + "\n".join(insert_lines) + "\n"
 
+    # Insert after the marker so older scripts stay first in DOM order and render below newer ones.
     html = html.replace(
         marker,
-        marker + "\n" + insertion,
+        marker + insertion,
         1,
     )
 
